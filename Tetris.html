@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <title>俄罗斯方块</title>
     <style>
+        @font-face {
+            font-family:tmb;
+            src:url("DS-DIGIB.TTF") format("TrueType");
+        }
         #container{
             position:absolute;
-            top:65px;
+            top:5px;
             right:0;
             left:0;
             bottom:0;
@@ -15,18 +19,21 @@
             border:2px solid #000;
             background:#ff9;
             font-size:13pt;
+            height:600px;
         }
         span{
             color:green;
+            font-family:tmb;
+            font-size:20pt;
         }
     </style>
 </head>
 <body>
-<h2 style="text-align:center;margin-bottom:50px">俄罗斯方块</h2>
+<h2 style="text-align:center">俄罗斯方块</h2>
 <div id="container">
     <div style="border-bottom:2px solid #000;height:50px;line-height: 50px">
         <div style="float:left">&nbsp;
-            速度:<span>d</span>&nbsp;
+            速度:<span>2</span>&nbsp;
             当前积分:<span></span>&nbsp;
         </div>
         <div style="float:right">
@@ -35,6 +42,6 @@
     </div>
 </div>
 
-
+<script src="tetris.js"></script>
 </body>
 </html>
