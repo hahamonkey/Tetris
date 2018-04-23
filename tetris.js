@@ -1,3 +1,23 @@
+//该数组用于记录地下已经固定的方块
+var tetris_status = [];
+for(var i=0; i<TETRIS_ROWS;i++){
+    tetris_status[i] = [];
+    for(var j=0;j<TETRIS_COLS;j++){
+        tetris_status[i][j] = NO_BLOCK;
+    }
+}
+
+//定义几种可能出现的方块组合
+var blockArr = [
+    [
+        //第一种可能出现的方块组合Z
+        {x:TETRIS_COLS / 2 - 1, y:0, color:1},
+        {x:TETRIS_COLS / 2, y:0, color:1},
+        {x:TETRIS_COLS / 2, y:1, color:1},
+        {x:TETRIS_COLS / 2 + 1, y:1, color:1}
+    ]
+]
+
 //创建canvas组件
 var creatCanvas = function(rows,cols,cellWidth,cellHeight){
     tetris_canvas = document.createElement('canvas');
