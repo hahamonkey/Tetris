@@ -10,11 +10,29 @@ for(var i=0; i<TETRIS_ROWS;i++){
 //定义几种可能出现的方块组合
 var blockArr = [
     [
-        //第一种可能出现的方块组合Z
+        //第一种可能出现的方块组合：Z
         {x:TETRIS_COLS / 2 - 1, y:0, color:1},
         {x:TETRIS_COLS / 2, y:0, color:1},
         {x:TETRIS_COLS / 2, y:1, color:1},
         {x:TETRIS_COLS / 2 + 1, y:1, color:1}
+    ],[
+        //第二种可能出现的方块组合：反Z
+        {x:TETRIS_COLS / 2 + 1, y:0, color:2},
+        {x:TETRIS_COLS / 2, y:0, color:2},
+        {x:TETRIS_COLS / 2, y:1, color:2},
+        {x:TETRIS_COLS / 2 - 1, y:1, color:2}
+    ],[
+        //第三种可能出现的方块组合 ：田
+        {x:TETRIS_COLS / 2 - 1, y:0, color:1},
+        {x:TETRIS_COLS / 2, y:0, color:1},
+        {x:TETRIS_COLS / 2, y:1, color:1},
+        {x:TETRIS_COLS / 2 + 1, y:1, color:1}
+    ],[
+        //第四种可能出现的方块组合：L
+        {x:TETRIS_COLS / 2 - 1, y:0, color:4},
+        {x:TETRIS_COLS / 2 - 1, y:1, color:4},
+        {x:TETRIS_COLS / 2 - 1, y:2, color:4},
+        {x:TETRIS_COLS / 2, y:2, color:4}
     ]
 ]
 
