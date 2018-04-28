@@ -33,6 +33,24 @@ var blockArr = [
         {x:TETRIS_COLS / 2 - 1, y:1, color:4},
         {x:TETRIS_COLS / 2 - 1, y:2, color:4},
         {x:TETRIS_COLS / 2, y:2, color:4}
+    ],[
+        //第五种可能出现的方块组合：J
+        {x:TETRIS_COLS / 2, y:0, color:5},
+        {x:TETRIS_COLS / 2, y:1, color:5},
+        {x:TETRIS_COLS / 2, y:2, color:5},
+        {x:TETRIS_COLS / 2 - 1, y:2, color:5}
+    ],[
+        //第六种可能出现的方块组合：条
+        {x:TETRIS_COLS / 2, y:0, color:6},
+        {x:TETRIS_COLS / 2, y:1, color:6},
+        {x:TETRIS_COLS / 2, y:2, color:6},
+        {x:TETRIS_COLS / 2 + 1, y:3, color:6}
+    ],[
+        //第七种可能出现的方块组合：T
+        {x:TETRIS_COLS / 2, y:0, color:7},
+        {x:TETRIS_COLS / 2 - 1, y:1, color:7},
+        {x:TETRIS_COLS / 2, y:1, color:7},
+        {x:TETRIS_COLS / 2 + 1, y:1, color:7}
     ]
 ]
 
